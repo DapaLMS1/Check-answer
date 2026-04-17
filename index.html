@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Answer Button</title>
+    <style>
+        .small-btn {
+            background-color: #532A8C;
+            color: #FFFFFF;
+            border: none;
+            padding: 6px 12px;
+            font-size: 13px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: sans-serif;
+        }
+        .small-btn:hover {
+            opacity: 0.9;
+        }
+        #answer-text {
+            display: none;
+            margin-left: 10px;
+            font-family: sans-serif;
+            font-size: 15px;
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="checkBtn" class="small-btn">Check answer</button>
+    <span id="answer-text">Scissors - they are closed.</span>
+
+    <script>
+        document.getElementById('checkBtn').addEventListener('click', function() {
+            document.getElementById('answer-text').style.display = 'inline';
+        });
+    </script>
+
+</body>
+</html>
